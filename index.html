@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin project Sign up form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="./icon/odin-lined.png">
+</head>
+<body>
+  <main>
+    <div id="sign-up">
+      <div id="aside">
+        <img src="./icon/odin-lined.png" alt="odin white logo">
+      </div>
+      <form action="#" id="sign-up-form">
+        <div class="header-content">
+          <p class="header-quote">
+            This is not a real online service! You know you need
+            something like this in your life to help you realize
+            your deepest dreams. Sign up now to get started.
+          </p>
+          <p class="quote-sign-in">You know you want to.</p>
+        </div>
+
+        <div class="input-container">
+          <h2>Let's do this!</h2>
+
+          <div class="form-first-name">
+            <label for="first-name">first name</label>
+            <input type="name"
+              id="first-name"
+              placeholder="Thor"
+              maxlength="100"
+              required
+              name="first-name">
+          </div>
+
+          <div class="form-last-name">
+            <label for="first-name">
+              <input type="text"
+                id="last-name"
+                placeholder="Odinson"
+                maxlength="100"
+                required
+                name="last-name">
+            </label>
+          </div>
+
+          <div class="form-email">
+            <label for="email">email</label>
+            <input type="email" 
+              id="email"
+              placeholder="example@email.com"
+              maxlength="245"
+              required
+              name="user-email">
+          </div>
+
+          <div class="form-phone-number">
+            <labe for="phone-number">phone number</labe>
+            <input type="tel"
+              id="phone-number"
+              required
+              min="5"
+              name="user-phone-number">
+          </div>
+
+          <div class="form-pwd">
+            <label for="pwd">password</label>
+            <input type="password" 
+              name="user-password" 
+              id="pwd"
+              required
+              minlength="4">
+          </div>
+          
+          <div class="form-confirm-pwd">
+            <label for="confirm-pwd">confirm password</label>
+            <input type="password" 
+              name="user-confirm-password" 
+              id="confirm-pwd"
+              required
+              minlength="4">
+          </div>
+        </div>
+
+        <div class="submit-container">
+          <button class="submit-btn" type="submit">Create Account</button>
+          <p class="submit-question">Already have an account? Log in</p>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
