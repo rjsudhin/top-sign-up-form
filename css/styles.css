@@ -43,7 +43,7 @@ input, button {
 #sign-up {
   display: flex;
   flex-direction: column;
-  background-color: #93a64023;
+  background-color: #93a6400a;
   backdrop-filter: blur(10px);
   border-radius: 1rem;
 }
