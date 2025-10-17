@@ -149,7 +149,7 @@ input:focus {
 
 
 input:focus:invalid {
-  border: 5px solid rgb(238, 52, 52);
+  border: 5px solid rgba(238, 52, 52, 0.554);
 }
 
 
