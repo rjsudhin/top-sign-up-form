@@ -68,9 +68,8 @@ input, button {
 
 #sign-up #sign-up-form .header-content{
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #fff;
-  font-style: italic;
   .quote-sign-in {
     margin-top: .5rem;
     font-weight: bold;
@@ -84,15 +83,13 @@ input, button {
 
 #sign-up .input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   div {
     padding: 1rem;
     width: 100%;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 1 1 250px;
     gap: .5rem;
     label {
      font-size: 1rem;
@@ -111,27 +108,43 @@ input, button {
 
 /* submit container */
 #sign-up .submit-container {
-  margin: 1rem auto;
-  max-width: 400px;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1.1rem;
   text-align: center;
-  font-size: 1rem;
   button {
+    max-width: 450px;
     width: 100%;
-    border-radius: .7rem;
     height: 40px;
+    border-radius: .8rem;
+    font-size: 1rem;
     font-weight: bold;
-    size: 1rem;
     margin-bottom: 1rem;
   }
 
 }
 
 
+input, input:focus {
+  box-shadow: 1px 1px 10px 10px #29a734dc;
+}
+
+
+input:focus:invalid {
+  box-shadow: 1px 1px 1px 10px red;
+}
+
+
 /* Desktop layout */
 @media only screen and (min-width: 800px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   main #sign-up {
     display: grid;  
@@ -154,7 +167,7 @@ input, button {
     }
 
     input {
-      min-width: 200px;
+      min-width: 180px;
       height: 35px;
     }
   }
