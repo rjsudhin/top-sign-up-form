@@ -127,6 +127,7 @@ input, button {
   flex-direction: column;
   text-align: center;
   color: #fff;
+  
   button {
     max-width: 450px;
     width: 100%;
